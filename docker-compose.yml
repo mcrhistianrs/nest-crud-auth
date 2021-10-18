@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  crud-auth-db:
+      image: postgres
+      ports:
+        - 5432:5432
+      environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD} 
+        POSTGRES_DB: test
+
